@@ -1,0 +1,23 @@
+<head>
+    <?php
+    /**
+     * add stylesheet, localpath and ui local path to Jquery helper
+     */
+    $this->jQuery()
+            ->addStylesheet($this->baseUrl().'/js/jquery/css/jquery-ui-1.8.18.custom.css')
+            ->setLocalPath($this->baseUrl().'/js/jquery/jquery-1.7.1.min.js')
+            ->setUiLocalPath($this->baseUrl().'/js/jquery/jquery-ui-1.8.18.custom.min.js');
+    /**
+     * this enables jquery in every file (use this only if required)
+     */
+    $this->jQuery()
+         ->enable()
+         ->uiEnable();
+    echo $this->jQuery();
+    
+    ?>
+</head>
+<body>
+    <?php echo $this->layout()->content; ?>
+</body>
+
