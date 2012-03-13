@@ -23,7 +23,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         /**
          * set helper Path
          */
-//        $view->setHelperPath(APPLICATION_PATH.'/helpers','');                     
+        $view->setHelperPath(APPLICATION_PATH.'/helpers','');                     
         /**
          * add jQuery helper path
          */
