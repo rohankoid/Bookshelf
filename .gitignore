@@ -1,2 +1,6 @@
 .zfproject.xml
 nbproject/
+.buildpath
+.project
+.settings/
+

@@ -19,7 +19,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
      */
     protected function _initViewHelpers()
     {
-        $view = new Zend_View();                        
+        $view = new Zend_View();   
+        /**
+         * set helper Path
+         */
+//        $view->setHelperPath(APPLICATION_PATH.'/helpers','');                     
         /**
          * add jQuery helper path
          */
